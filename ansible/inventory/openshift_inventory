@@ -1,0 +1,46 @@
+[openshift-nodes]
+[openshift-nodes:children]
+OSEv3
+
+# Create an OSEv3 group that contains the masters and nodes groups
+[OSEv3:children]
+masters
+nodes
+etcd
+
+# host group for masters
+[masters]
+master-01.origin.cary.shackspacehosting.com
+master-02.origin.cary.shackspacehosting.com
+
+# host group for etcd
+[etcd]
+etcd-01.origin.cary.shackspacehosting.com
+etcd-02.origin.cary.shackspacehosting.com
+etcd-03.origin.cary.shackspacehosting.com
+
+# host group for nodes, includes region info
+[nodes]
+master-01.origin.cary.shackspacehosting.com
+master-02.origin.cary.shackspacehosting.com
+
+# Worker nodes
+node-01.origin.cary.shackspacehosting.com
+node-02.origin.cary.shackspacehosting.com
+node-03.origin.cary.shackspacehosting.com
+node-04.origin.cary.shackspacehosting.com
+node-05.origin.cary.shackspacehosting.com
+node-06.origin.cary.shackspacehosting.com
+node-07.origin.cary.shackspacehosting.com
+node-08.origin.cary.shackspacehosting.com
+node-09.origin.cary.shackspacehosting.com
+node-10.origin.cary.shackspacehosting.com
+
+
+
+
+
+
+
+
+
