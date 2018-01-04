@@ -1,0 +1,39 @@
+---
+deployment_type=origin
+
+os_sdn_network_plugin_name=redhat/openshift-ovs-multitenant
+openshift_master_default_subdomain=pods.origin.shackspacehosting.com
+openshift_master_cluster_public_hostname=origin.shackspacehosting.com
+openshift_clock_enabled=true
+
+openshift_hosted_metrics_deploy=true
+openshift_hosted_logging_deploy=true
+
+#openshift_enable_service_catalog=true
+#openshift_template_service_broker_namespaces=['openshift']
+osm_use_cockpit=true
+openshift_master_cluster_method=native
+
+openshift_hosted_registry_storage_kind=nfs
+openshift_hosted_registry_storage_access_modes=['ReadWriteMany']
+openshift_hosted_registry_storage_host=nfs-registry.san.origin.cary.shackspacehosting.com
+openshift_hosted_registry_storage_nfs_directory=/exports/openshift
+openshift_hosted_registry_storage_volume_name=registry
+openshift_hosted_registry_storage_volume_size=10Ti
+openshift_hosted_registry_storage_labels={'storage': 'registry'}
+
+openshift_hosted_metrics_storage_kind=nfs
+openshift_hosted_metrics_storage_access_modes=['ReadWriteOnce']
+openshift_hosted_metrics_storage_host=nfs-metrics.san.origin.cary.shackspacehosting.com
+openshift_hosted_metrics_storage_nfs_directory=/exports/openshift
+openshift_hosted_metrics_storage_volume_name=metrics
+openshift_hosted_metrics_storage_volume_size=10Ti
+openshift_hosted_metrics_storage_labels={'storage': 'metrics'}
+
+openshift_hosted_logging_storage_kind=nfs
+openshift_hosted_logging_storage_access_modes=['ReadWriteOnce']
+openshift_hosted_logging_storage_host=nfs-logging.san.origin.cary.shackspacehosting.com
+openshift_hosted_logging_storage_nfs_directory=/exports/openshift
+openshift_hosted_logging_storage_volume_name=logging
+openshift_hosted_logging_storage_volume_size=10Ti
+openshift_hosted_logging_storage_labels={'storage': 'logging'}
