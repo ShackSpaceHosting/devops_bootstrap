@@ -1,0 +1,31 @@
+fw-01.cary.shackspacehosting.com ansible_ssh_host=10.27.100.1
+fw-02.cary.shackspacehosting.com ansible_ssh_host=10.27.100.2
+idm.shackspacehosting.com ansible_ssh_host=10.27.100.4
+core-01.cary.shackspacehosting.com ansible_ssh_host=10.27.100.5
+
+etcd-01.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.20
+etcd-02.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.21
+etcd-03.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.22
+
+master-01.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.31
+master-02.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.41
+
+node-01.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.32
+node-02.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.42
+node-03.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.33
+node-04.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.43
+node-05.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.34
+node-06.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.44
+node-07.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.35
+node-08.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.45
+node-09.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.36
+node-10.origin.cary.shackspacehosting.com ansible_ssh_host=10.27.100.46
+
+
+
+
+
+
+
+
+
