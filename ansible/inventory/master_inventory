@@ -1,16 +1,25 @@
+# This inventory lists the actual hosts used by shackspacehosting.com and its related infrastructure.
+# This file is intended to only list hosts, ansible connection information, and vm_type if applicable
+# Other variables and group relationships live external to this file
+
 fw-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.1
 fw-02.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.2
-idm.shackspacehosting.com					ansible_ssh_host=10.27.100.4
+idm.shackspacehosting.com					ansible_ssh_host=10.27.100.4	vm_type=bhyve
 core-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.5
-awx.shackspacehosting.com					ansible_ssh_host=10.27.100.10
+awx.shackspacehosting.com					ansible_ssh_host=10.27.100.10	vm_type=bhyve
 
 bmm-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.11
 bmm-02.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.12
 bmm-03.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.13
 
-etcd-01.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.20
-etcd-02.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.21
-etcd-03.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.22
+vtrak-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.15
+vtrak-02.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.16
+vtrak-03.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.17
+vtrak-04.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.18
+
+etcd-01.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.20	vm_type=bhyve
+etcd-02.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.21	vm_type=bhyve
+etcd-03.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.22	vm_type=bhyve
 
 master-01.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.31
 master-02.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.41
