@@ -1,0 +1,4 @@
+---
+openshift_hostname: master-01.origin.cary.shackspacehosting.com
+openshift_node_labels: "{'region': 'infra', 'zone': 'east', 'chassis': 'bmm-01.cary.shackspacehosting.com'}"
+openshift_schedulable: true
