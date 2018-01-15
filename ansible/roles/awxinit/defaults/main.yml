@@ -1,6 +1,6 @@
 ---
 # defaults file for awxinit
 awx_user: awx
-awx_uid: 999
+awx_uid: 1000
 awx_group: awx
-awx_gid: 999
+awx_gid: 1000
