@@ -1,0 +1,2 @@
+---
+ssh_privkey_encrypted: {{ awx_ssh_privkey_encrypted }}

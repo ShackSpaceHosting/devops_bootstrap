@@ -1,5 +1,5 @@
 ---
 #awx_ssh_pubkey: "ssh-rsa AAAAB...R youruser@shackspacehosting.com"
-awx_ssh_pubkey: {{ awx_ssh_pubkey_encrypted }}
-#awx_ssh_privkey: {{ awx_ssh_privkey_encrypted }}
-awx_ssh_privkey: {{ awx_ssh_privkey_encrypted }}
+awx_ssh_pubkey: "{{ awx_ssh_pubkey_encrypted }}"
+#awx_ssh_privkey:
+awx_ssh_privkey: "{{ awx_ssh_privkey_encrypted }}"
