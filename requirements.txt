@@ -5,11 +5,12 @@
 # be suitable)
 
 # Ansible is required for all deployments :)
-ansible==2.3.3
+ansible>=2.4
+
 # keyring is used to lookup passwords for Ansible vaults via an OS or shell provided keystore like OS X keychain
 keyring
 
 passlib
-sshpass
+#sshpass
 bind-utils
 httpd-tools

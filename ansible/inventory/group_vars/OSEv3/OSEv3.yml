@@ -37,3 +37,7 @@ openshift_hosted_logging_storage_nfs_directory: /exports/openshift
 openshift_hosted_logging_storage_volume_name: logging
 openshift_hosted_logging_storage_volume_size: 10Ti
 openshift_hosted_logging_storage_labels: {'storage': 'logging'}
+
+hostinit_additional_packages: [docker, docker-common, httpd-tools]
+#Enabled implies started
+hostinit_additional_enabled_services: [docker]

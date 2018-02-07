@@ -1,4 +1,6 @@
 [openshift-nodes]
+[openshift-nodes:vars]
+
 [openshift-nodes:children]
 OSEv3
 

@@ -1,0 +1,12 @@
+- name: awxinit
+  src: https://github.com/dwimsey/ansible-awxinit.git
+  scm: git
+- name: hostinit
+  src: https://github.com/dwimsey/ansible-hostinit.git
+  scm: git
+- name: java
+  src: https://github.com/dwimsey/ansible-java.git
+  scm: git
+- name: virtualvault
+  src: https://github.com/dwimsey/ansible-virtualvault.git
+  scm: git
