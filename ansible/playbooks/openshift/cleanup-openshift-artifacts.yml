@@ -1,0 +1,34 @@
+---
+- name: Failed-deploy cleanup tasks
+  hosts: openshift-nodes
+  tasks:
+    - name: Uninstall previously install packages
+      package: name={{item}} state=absent
+      with_items:
+        - openshift
+        - openshift-*
+        - etcd
+        - docker
+        - docker-common
+
+#    - name: Remove atomic-openshift files
+#      file:
+#        path: "{{item.path}}" #correction code
+#        state: absent
+#      with_fileglob:
+#        - "/etc/sysconfig/atomic-openshift*"
+#        - "/etc/sysconfig/docker*"
+
+    - name: remove files and directories
+      file:
+        state: absent
+        path: "{{ item }}"
+      with_items:
+        - /etc/origin
+        - /var/lib/openshift
+        - /etc/etcd
+        - /var/lib/etcd
+        - /root/.kube
+        - /etc/ansible/facts.d
+        - /usr/share/openshift
+        - /var/lib/docker
