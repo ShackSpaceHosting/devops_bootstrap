@@ -4,9 +4,9 @@
 
 #fw-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.1
 #fw-02.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.2
-idm.shackspacehosting.com					ansible_ssh_host=10.27.100.4	vm_type=bhyve
-core-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.5
-awx.shackspacehosting.com					ansible_ssh_host=10.27.100.10	vm_type=bhyve
+#idm.shackspacehosting.com					ansible_ssh_host=10.27.100.4	vm_type=bhyve
+#core-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.5
+#awx.shackspacehosting.com					ansible_ssh_host=10.27.100.10	vm_type=bhyve
 
 #bmm-01.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.11
 #bmm-02.cary.shackspacehosting.com			ansible_ssh_host=10.27.100.12
