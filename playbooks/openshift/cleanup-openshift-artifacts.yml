@@ -38,6 +38,7 @@
   tasks:
     - name: vmm destroy
       command: /usr/sbin/bhyvectl --destroy "--vm={{ item }}"
+      with_items:
         - etcd-01
         - etcd-02
         - etcd-03
