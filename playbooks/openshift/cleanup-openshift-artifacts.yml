@@ -1,7 +1,7 @@
 ---
 #- we
 ##- name: Common failed-deploy cleanup tasks
-##  hosts: etcd:nodes:masters
+##  hosts: etcd:nodes:masters:!core-01.cary.shackspacehosting.com:!awx.cary.shackspacehosting.com:!idm.shackspacehosting.com
 ##  tasks:
 ##    - name: Uninstall previously install packages
 ##      package: name={{item}} state=absent
