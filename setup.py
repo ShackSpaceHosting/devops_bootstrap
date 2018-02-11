@@ -15,7 +15,7 @@ import subprocess
 
 sys.path.insert(0, os.path.abspath('lib'))
 
-roles_path = os.path.dirname(os.path.realpath(__file__)) + '/ansible/roles/'
+roles_path = os.path.dirname(os.path.realpath(__file__)) + 'roles/'
 
 with open('requirements.txt') as requirements_file:
 	install_requirements = requirements_file.read().splitlines()
