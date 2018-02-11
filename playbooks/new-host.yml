@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: all:!core-01.cary.shackspacehosting.com:!awx.cary.shackspacehosting.com:!idm.shackspacehosting.com
   become: yes
   roles:
     - awxinit
