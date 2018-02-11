@@ -36,11 +36,11 @@
 - name: Rollback etcd nodes
   hosts: core-01.cary.shackspacehosting.com
   tasks:
-#    - name: vmm destroy
-#      command: /usr/sbin/bhyvectl --destroy "--vm={{ item }}"
-#        - etcd-01
-#        - etcd-02
-#        - etcd-03
+    - name: vmm destroy
+      command: /usr/sbin/bhyvectl --destroy "--vm={{ item }}"
+        - etcd-01
+        - etcd-02
+        - etcd-03
 
     - name: zfs rollback
       command: zfs rollback -r "zfs01/apiary/{{ item }}.cary.shackspacehosting.com/disk00@pre-ocp-deploy-awx"
