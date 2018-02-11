@@ -33,16 +33,16 @@
 ##        - /etc/ansible/facts.d
 ##        - /usr/share/openshift
 ##        - /var/lib/docker
-
-- name: Rollback etcd nodes
-  hosts: core-01.cary.shackspacehosting.com
-  tasks:
-    - name: vmm destroy
-      command: "/usr/local/bin/sudo /usr/sbin/bhyvectl --destroy --vm={{ item }}"
-      with_items:
-        - etcd-01
-        - etcd-02
-        - etcd-03
+#
+#- name: Rollback etcd nodes
+#  hosts: core-01.cary.shackspacehosting.com
+#  tasks:
+#    - name: vmm destroy
+#      command: "/usr/local/bin/sudo /usr/sbin/bhyvectl --destroy --vm={{ item }}"
+#      with_items:
+#        - etcd-01
+#        - etcd-02
+#        - etcd-03
 
 - name: Rollback etcd nodes
   hosts: core-01.cary.shackspacehosting.com
