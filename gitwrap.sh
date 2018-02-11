@@ -5,7 +5,7 @@ echo ""
 echo ""
 
 SCRIPT_DIR="$(cd `dirname $0` && pwd)"
-ROLES_DIR="${SCRIPT_DIR}/ansible/roles"
+ROLES_DIR="${SCRIPT_DIR}/roles"
 
 
 cd $ROLES_DIR
