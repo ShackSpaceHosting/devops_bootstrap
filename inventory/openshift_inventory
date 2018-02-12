@@ -1,8 +1,4 @@
-[openshift-nodes]
-[openshift-nodes:vars]
-
-[openshift-nodes:children]
-OSEv3
+[OSEv3]
 
 # Create an OSEv3 group that contains the masters and nodes groups
 [OSEv3:children]
