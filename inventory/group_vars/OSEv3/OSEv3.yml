@@ -21,22 +21,22 @@ openshift_hosted_registry_storage_nfs_directory: /exports/openshift
 openshift_hosted_registry_storage_volume_name: registry
 openshift_hosted_registry_storage_volume_size: 10Ti
 openshift_hosted_registry_storage_labels: {'storage': 'registry'}
-
-openshift_hosted_metrics_storage_kind: nfs
-openshift_hosted_metrics_storage_access_modes: ['ReadWriteOnce']
-openshift_hosted_metrics_storage_host: nfs-metrics.san.origin.cary.shackspacehosting.com
-openshift_hosted_metrics_storage_nfs_directory: /exports/openshift
-openshift_hosted_metrics_storage_volume_name: metrics
-openshift_hosted_metrics_storage_volume_size: 10Ti
-openshift_hosted_metrics_storage_labels: {'storage': 'metrics'}
-
-openshift_hosted_logging_storage_kind: nfs
-openshift_hosted_logging_storage_access_modes: ['ReadWriteOnce']
-openshift_hosted_logging_storage_host: nfs-logging.san.origin.cary.shackspacehosting.com
-openshift_hosted_logging_storage_nfs_directory: /exports/openshift
-openshift_hosted_logging_storage_volume_name: logging
-openshift_hosted_logging_storage_volume_size: 10Ti
-openshift_hosted_logging_storage_labels: {'storage': 'logging'}
+#
+#openshift_hosted_metrics_storage_kind: nfs
+#openshift_hosted_metrics_storage_access_modes: ['ReadWriteOnce']
+#openshift_hosted_metrics_storage_host: nfs-metrics.san.origin.cary.shackspacehosting.com
+#openshift_hosted_metrics_storage_nfs_directory: /exports/openshift
+#openshift_hosted_metrics_storage_volume_name: metrics
+#openshift_hosted_metrics_storage_volume_size: 10Ti
+#openshift_hosted_metrics_storage_labels: {'storage': 'metrics'}
+#
+#openshift_hosted_logging_storage_kind: nfs
+#openshift_hosted_logging_storage_access_modes: ['ReadWriteOnce']
+#openshift_hosted_logging_storage_host: nfs-logging.san.origin.cary.shackspacehosting.com
+#openshift_hosted_logging_storage_nfs_directory: /exports/openshift
+#openshift_hosted_logging_storage_volume_name: logging
+#openshift_hosted_logging_storage_volume_size: 10Ti
+#openshift_hosted_logging_storage_labels: {'storage': 'logging'}
 
 hostinit_additional_packages: [docker, docker-common, httpd-tools]
 #Enabled implies started
