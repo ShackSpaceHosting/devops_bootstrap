@@ -6,8 +6,8 @@ openshift_master_default_subdomain: pods.origin.shackspacehosting.com
 openshift_master_cluster_public_hostname: origin.shackspacehosting.com
 openshift_clock_enabled: true
 
-openshift_hosted_metrics_deploy: true
-openshift_hosted_logging_deploy: true
+openshift_metrics_deploy: true
+openshift_logging_deploy: true
 
 #openshift_enable_service_catalog: true
 #openshift_template_service_broker_namespaces: ['openshift']
@@ -35,7 +35,7 @@ openshift_logging_storage_access_modes: ['ReadWriteOnce']
 openshift_logging_storage_host: nfs-logging.san.origin.cary.shackspacehosting.com
 #openshift_hosted_logging_storage_nfs_directory: /exports/openshift
 #openshift_hosted_logging_storage_volume_name: logging
-openshift_hosted_logging_storage_nfs_directory: /exports/openshift
+openshift_logging_storage_nfs_directory: /exports/openshift
 openshift_logging_storage_volume_name: logging
 
 openshift_logging_storage_volume_size: 10Ti
