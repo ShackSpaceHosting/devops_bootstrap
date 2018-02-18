@@ -9,3 +9,7 @@ roles/*
 !roles/requirements.yml
 secrets
 .DS_Store
+
+containers/consul
+containers/vault
+containers/ignite
