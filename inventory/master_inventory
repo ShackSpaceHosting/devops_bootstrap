@@ -39,13 +39,12 @@ node-10.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.46
 
 
 [bmm1]
-master-01.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.31
-node-01.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.32
-node-03.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.33
-node-05.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.34
-node-07.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.35
-node-09.origin.cary.shackspacehosting.com	ansible_ssh_host=10.27.100.36
-
+master-01.origin.cary.shackspacehosting.com
+node-01.origin.cary.shackspacehosting.com
+node-03.origin.cary.shackspacehosting.com
+node-05.origin.cary.shackspacehosting.com
+node-07.origin.cary.shackspacehosting.com
+node-09.origin.cary.shackspacehosting.com
 
 [bmm2]
 master-02.origin.cary.shackspacehosting.com
