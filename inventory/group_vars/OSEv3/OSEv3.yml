@@ -1,6 +1,30 @@
 ---
 deployment_type: origin
 
+# This are overridden on the command line
+#ocp_ldap_bind_password: ''
+#ocp_router_certfile: "STAR.pods.origin.shackspacehosting.com.crt"
+#ocp_router_keyfile: "STAR.pods.origin.shackspacehosting.com.key"
+#ocp_router_cafile: "CombinedCARoot.crt"
+#ocp_master_named_certfile: "origin.shackspacehosting.com.crt"
+#ocp_master_named_keyfile: "origin.shackspacehosting.com.key"
+#ocp_master_named_cafile: "CombinedCARoot.crt"
+#ocp_ldap_identity_provider_cafile: "CombinedCARoot.crt"
+
+openshift_hosted_router_certificate: {"certfile": "{{ ocp_router_certfile }}", "keyfile": "{{ ocp_router_keyfile }}", "cafile": "{{ ocp_router_cafile }}"}
+
+openshift_master_overwrite_named_certificates: true
+openshift_master_named_certificates: [{"certfile": "{{ ocp_master_named_certfile }}", "keyfile": "{{ ocp_master_named_keyfile }}", "cafile": "{{ ocp_master_named_cafile }}"}]
+
+deployment_type: origin
+# Basic setup for FreeIPA server, using email address for login.  Use 'uid' instead of 'mail' to use the username
+# instead of email address.  This FreeIPA server is setup with a valid certificate and root domain of
+# shackspacehosting.com  An ocplookups user was added allowing the OpenShift cluster to view user information without
+# allowing anonymous access.  This user can only view required information about users which have access to OpenShift.
+openshift_master_identity_providers: [{'name': 'idm', 'challenge': 'true', 'login': 'true', 'kind': 'LDAPPasswordIdentityProvider', 'attributes': {'id': ['dn'], 'email': ['mail'], 'name': ['cn'], 'preferredUsername': ['mail']}, 'bindDN': 'uid=ocplookups,cn=users,cn=accounts,dc=shackspacehosting,dc=com', 'bindPassword': '{{ ocp_ldap_bind_password }}', 'ca': '{{ ocp_ldap_identity_provider_cafile }}', 'insecure': 'false', 'url': 'ldaps://idm.shackspacehosting.com:636/cn=users,cn=accounts,dc=shackspacehosting,dc=com?mail'}]
+
+
+
 os_sdn_network_plugin_name: redhat/openshift-ovs-multitenant
 openshift_master_default_subdomain: pods.origin.shackspacehosting.com
 openshift_master_cluster_public_hostname: origin.shackspacehosting.com
