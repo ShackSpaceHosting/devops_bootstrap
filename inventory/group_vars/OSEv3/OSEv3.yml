@@ -16,7 +16,6 @@ openshift_hosted_router_certificate: {"certfile": "{{ ocp_router_certfile }}", "
 openshift_master_overwrite_named_certificates: true
 openshift_master_named_certificates: [{"certfile": "{{ ocp_master_named_certfile }}", "keyfile": "{{ ocp_master_named_keyfile }}", "cafile": "{{ ocp_master_named_cafile }}"}]
 
-deployment_type: origin
 # Basic setup for FreeIPA server, using email address for login.  Use 'uid' instead of 'mail' to use the username
 # instead of email address.  This FreeIPA server is setup with a valid certificate and root domain of
 # shackspacehosting.com  An ocplookups user was added allowing the OpenShift cluster to view user information without
